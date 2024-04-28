@@ -1,0 +1,497 @@
+/* Accueil et menu */
+
+*{
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 62,5%
+}
+
+body {
+	font-family: Verdana, Geneva,Tahoma,sans-serif ;
+	font-size: 1.0rem;
+	color:#555;
+	margin: 0;
+	
+}
+a{
+	text-decoration: none;
+}
+img{
+	max-width:100%;
+}
+.list-unstyled{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+}
+
+.container{
+	padding: 1rem 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.d-flex{
+	display:flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.grid{
+	display:flex;
+	flex-wrap:wrap;
+	align-items: center;
+}
+
+.grid_items{
+	width:100%;
+	height:auto;
+}
+@media screen and (min-width: 750 px){
+	.container{
+		max-width: 1200px;
+		margin:0 auto;
+		padding: 2rem;
+		background: #0000;
+	}
+}
+
+.header{
+	background: #FFFFFF;
+	border-bottom: 1px solid #EEE;
+}
+
+.header.logo{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-size: 2rem;
+	letter-spacing: 2px;
+
+}
+.navbar{
+	display: none;
+}
+
+.header li{
+	display: inline-flex;
+	align-items: center;
+	padding: 0 0.5rem ;
+}
+.header a{
+	color: #333;
+}
+.header a:hover{
+	color: red;
+}
+.header.right{
+	display: flex;
+	align-items: center;
+
+}
+
+.socials {
+	display: flex;
+}
+.social a{
+	padding: 0 2px;
+}
+.socials.icon{
+	height: 18px;
+}
+
+.burger{
+	background: none;
+	border:none;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	position: relative;
+	margin-left: 1rem;
+}
+
+.burger.bar::before{
+	display: block;
+	width: 22px;
+	height: 3px;
+	background: #333;
+}
+
+.burger.bar::before, .burger.bar::after{
+	display: block;
+	content: "";
+	width: 22px;
+	height: 3px;
+	background: #333;
+	position: absolute;
+	top:0;
+
+}
+
+
+.burger.bar::before{
+	transform: translateY(-8px);
+}
+
+ .burger.bar::after{
+ 	transform: translateY(8px);
+
+ }
+
+
+ @media screen and (max-width: 749px){
+
+ }
+ 
+
+@media screen and (min-width: 750px){
+	.navbar{
+		display: flex;
+	}
+	.burger{
+		display: none;
+	}
+
+}
+
+/*A PROPOS DE MOI*/
+
+
+.grid {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+
+.grid_item {
+    width: 100%; 
+    text-align: center; 
+}
+
+.grid_item img {
+    width: 100%; 
+    max-width: 400px; 
+    border-radius: 10px; 
+    margin-bottom: 20px;
+}
+
+.section_title {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+#about p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+
+
+/* HERO*/
+
+
+#hero {
+    background-color: #AAB7B8;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.container_hero{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+.grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.hero_item {
+    width: 48%; 
+}
+
+
+.hero_item.left {
+    text-align: center;
+}
+
+
+.title {
+    font-size: 2em;
+    color:  #fff;
+    margin-bottom: 20px;
+}
+
+
+.hero_avatar img {
+    border-radius: 50%; 
+    width: 100%;
+    max-width: 150px;
+    margin: 0 auto;
+    display: block;
+}
+
+
+
+/* DIPLOMES*/
+
+
+
+#services {
+    background-color: #AAB7B8;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.container_diplome {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section_header {
+    margin-bottom: 30px;
+}
+
+.section_title {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+
+.diplome-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.diplome {
+    flex-basis: 48%; 
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+
+.diplome-line {
+    flex-basis: 2%; 
+    height: 2px;
+    background-color: #333;
+}
+
+
+.diplome-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+
+.diplome-details {
+    font-size: 1em;
+    color: #777;
+}
+
+/*Mes compétences */
+
+
+#skills {
+    background-color: #f8f8f8;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.container_competence {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section_title {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+
+.grid {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.grid_item {
+    width: 45%; 
+    margin-bottom: 30px;
+}
+
+.competence-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.competence-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+    background-color: #fff;
+    color: #333;
+}
+
+
+.grid_item h3 {
+    background-color: #AAB7B8;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/*Projets*/
+
+.section_title{
+  text-align: center;
+}
+
+.project-table {
+  display: table;
+  width: 100%;
+  border-spacing: 20px;
+  background-color: #AAB7B8;
+
+}
+
+.project-row {
+  display: table-row;
+  background: #fff;
+}
+
+.project-cell {
+  display: table-cell;
+  width: 50%; 
+  vertical-align: top;
+  text-align: left;
+  border: 1px solid #ddd;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.project-cell h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.project-cell p {
+  margin: 0;
+}
+
+.project-cell a {
+  display: block;
+  margin-top: 20px;
+  color: #333;
+  text-decoration: none;
+}
+
+.project-cell a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* Contact*/
+
+.contact {
+  background-color: #f8f8f8;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.container_contact {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section_header {
+  margin-bottom: 30px;
+}
+
+.section_title {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+  text-align: left;
+  width: 100%;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: auto;
+  cursor: pointer;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+  background-color: #555;
+}
+
+/* Footer */
+
+footer {
+      background-color: #333;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      flex: 1;
+    }
+
+    .container_footer {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .grid_item_f {
+      margin: 10px;
+    }
+
+    .grid_item_f p {
+      margin: 0;
+    }
+
+
